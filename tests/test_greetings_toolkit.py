@@ -1,12 +1,12 @@
 import unittest
 
 from artifacts_docker_tool import GreetingsTool
-from docker_toolkit import GreetingsToolkit
+from docker_toolkit import IflytekArtifactoryToolkit
 
 
 class GreetingsToolkitTests(unittest.TestCase):
     def setUp(self):
-        self.toolkit = GreetingsToolkit()
+        self.toolkit = IflytekArtifactoryToolkit()
 
     def test_get_tools_returns_list_of_tools(self):
         tools = self.toolkit.get_tools()

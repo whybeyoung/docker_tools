@@ -4,7 +4,7 @@ from typing import Type, List
 from artifacts_docker_tool import DockerImageListTool
 
 
-class GreetingsToolkit(BaseToolkit, ABC):
+class IflytekArtifactoryToolkit(BaseToolkit, ABC):
     name: str = "Iflytek Artifactory Toolkit"
     description: str = "Iflytek Artifactory  kit contains all tools related to Iflytek Artifactory"
 

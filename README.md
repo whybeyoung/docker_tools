@@ -1,2 +1,2 @@
-# GreetingTool
-SuperAGI Greeting Tool -  A sample tool to help create new external tools.
+# IflytekArtifactoryToolt
+Iflytek Artifactory  kit contains all tools related to Iflytek Artifactory
