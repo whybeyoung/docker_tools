@@ -1,0 +1,3 @@
+ArtifactoryUrl: 'https://artifacts.iflytek.com'  #name of the person to send greetings from
+DockerUsername: ""
+DockerPassword: ""

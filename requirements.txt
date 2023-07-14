@@ -1,0 +1,4 @@
+pydantic==1.10.8
+PyYAML==6.0
+autospark_kit==0.0.1
+pyartifactory
