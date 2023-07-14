@@ -1,5 +1,5 @@
 from abc import ABC
-from autospark_kit.tools.base_tool import BaseToolkit, BaseTool
+from superagi.tools.base_tool import BaseToolkit, BaseTool
 from typing import Type, List
 from artifacts_docker_tool import DockerImageListTool
 
