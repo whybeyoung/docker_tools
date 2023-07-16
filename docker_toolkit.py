@@ -1,8 +1,7 @@
 from abc import ABC
 from superagi.tools.base_tool import BaseToolkit, BaseTool
 from typing import Type, List
-from artifacts_docker_tool import DockerImageListTool
-
+from superagi.tools.iflytek_artifactory_tookit.artifacts_docker_tool import DockerImageListTool
 
 class IflytekArtifactoryToolkit(BaseToolkit, ABC):
     name: str = "Iflytek Artifactory Toolkit"
