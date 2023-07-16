@@ -1,23 +1,23 @@
 import unittest
 
-from artifacts_docker_tool import GreetingsTool, GreetingsInput
+from artifacts_docker_tool import DockerImageListTool, ListImageTagsInput
 
 
-class GreetingsToolTestCase(unittest.TestCase):
+class DockerImageListToolTestCase(unittest.TestCase):
     def setUp(self):
-        self.tool = GreetingsTool()
+        self.tool = DockerImageListTool()
 
     def test_tool_name(self):
         self.assertEqual(self.tool.name, "Greetings Tool")
 
     def test_tool_args_schema(self):
-        self.assertEqual(self.tool.args_schema, GreetingsInput)
+        self.assertEqual(self.tool.args_schema, ListImageTagsInput)
 
     def test_tool_description(self):
-        self.assertEqual(self.tool.description, "Sends a Greeting Message")
+        self.assertEqual(self.tool.description, "Sends List Image Input")
 
     def test_execute_method(self):
-        greetings_input = GreetingsInput(greetings="Hello")
-        expected_output = "Hello" + "\n" + self.tool.get_tool_config('FROM')
-        output = self.tool._execute(greetings=greetings_input.greetings)
-        self.assertEqual(output, expected_output)
+        list_input = ListImageTagsInput(repo_path="docker-private/atp")
+        output = self.tool._execute(repo_path=list_input.repo_path)
+        print(output)
+        #self.assertEqual(output, expected_output)

@@ -9,7 +9,9 @@ def list(repourl, user_name, apikey, repo, repo_path):
     art = Artifactory(url=repourl,
                       auth=(user_name, apikey),
                       api_version=1)
-
+    if not user_name or not apikey:
+        print("no valid key ")
+        return []
     try:
         repo = art.repositories.get_repo(repo)
     except RepositoryNotFoundException as e:
