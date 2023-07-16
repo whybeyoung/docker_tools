@@ -43,6 +43,6 @@ class DockerImageListTool(BaseTool):
         artiurl = self.get_tool_config('ArtifactoryUrl')
         user = self.get_tool_config("DockerUsername")
         apikey = self.get_tool_config("DockerPassword")
-        repo = repo_path.split("/", 1)
+        repo = repo_path.split("/", 1)[0]
 
         return list(artiurl, user, apikey, repo, repo_path)
